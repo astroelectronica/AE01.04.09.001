@@ -1,0 +1,8 @@
+ *trasient response
+.include ../AE01.04.09.001.cir
+.param Vin=5
+.param Ctrigg=0.1u
+.param Rdisc=3.16k
+.param Rtrigg=12.7k
+.tran 0 30m 0 uic startup
+.backanno

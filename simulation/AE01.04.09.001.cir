@@ -1,0 +1,12 @@
+.title KiCad schematic
+.include "models/C2012X7R2A104K125AA_p.mod"
+.include "models/C2012X7R2E103K125AA_p.mod"
+.include "models/ICM7555.lib"
+XU2 0 /TRIGG /OUT VDD /CTRL /TRIGG /DISC VDD ICM7555
+V1 VDD 0 {Vin}
+XU3 VDD 0 C2012X7R2A104K125AA_p
+XU4 /CTRL 0 C2012X7R2E103K125AA_p
+R2 /DISC /TRIGG {Rtrigg}
+R1 VDD /DISC {Rdisc}
+C1 /TRIGG 0 {Ctrigg}
+.end
